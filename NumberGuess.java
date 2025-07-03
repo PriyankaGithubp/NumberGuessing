@@ -11,7 +11,7 @@ package saiket_Projects;
 	        Random random = new Random();
 	        boolean playAgain = true;
 
-	        System.out.println("🎮 Welcome to the Number Guessing Game!");
+	        System.out.println(" Welcome to the Number Guessing Game!");
 
 	        while (playAgain) {
 	            System.out.println("\nChoose Difficulty Level:");
@@ -54,7 +54,7 @@ package saiket_Projects;
 	                attempts++;
 
 	                if (guess == numberToGuess) {
-	                    System.out.println("🎉 Congratulations! You guessed the number in " + attempts + " attempts.");
+	                    System.out.println(" Congratulations! You guessed the number in " + attempts + " attempts.");
 	                    guessed = true;
 	                    break;
 	                } else if (guess < numberToGuess) {
@@ -67,7 +67,7 @@ package saiket_Projects;
 	            }
 
 	            if (!guessed) {
-	                System.out.println("😞 You've run out of attempts. The number was: " + numberToGuess);
+	                System.out.println(" You've run out of attempts. The number was: " + numberToGuess);
 	            }
 
 	            System.out.print("Do you want to play again? (yes/no): ");
@@ -75,7 +75,7 @@ package saiket_Projects;
 	            playAgain = response.equals("yes");
 	        }
 
-	        System.out.println("Thanks for playing! 🎮");
+	        System.out.println("Thanks for playing! ");
 	        scanner.close();
 	    }
 	}
